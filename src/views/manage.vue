@@ -1,21 +1,18 @@
-
 <template>
   <v-container>
     Members:
-    <v-avatar class="member-avatar">
-      <img src="rontale.jpg" alt="Rontale" />
-    </v-avatar>
-    Rontale, Dan Keneth M.<br>
-
-    <v-avatar class="member-avatar">
-      <img src="rhigen.jpg" alt="Rhigen" />
-    </v-avatar>
-    Rhigen Abaca<br>
-
-    <v-avatar class="member-avatar">
-      <img src="nicolle.jpg" alt="Nicolle" />
-    </v-avatar>
-    Nicolle Gutierrez
+    <div class="member">
+      <div class="member-image member1"></div>
+      Rontale, Dan Keneth M.
+    </div>
+    <div class="member">
+      <div class="member-image member2"></div>
+      Rhigen Abaca
+    </div>
+    <div class="member">
+      <div class="member-image member3"></div>
+      Nicolle Gutierrez
+    </div>
   </v-container>
 </template>
 
@@ -28,10 +25,31 @@ export default defineComponent({
 </script>
 
 <style>
-.member-avatar {
-  width: 100px; /* Adjust the size as needed */
-  height: 100px; /* Adjust the size as needed */
-  margin-right: 10px; /* Add some spacing between avatars */
-  display: inline-block;
+.member {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.member-image {
+  width: 50px;
+  height: 50px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.member1 {
+  background-image: url('rontale.jpg');
+}
+
+.member2 {
+  background-image: url('rhigen.jpg');
+}
+
+.member3 {
+  background-image: url('nicolle.jpg');
 }
 </style>
