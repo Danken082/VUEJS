@@ -2,7 +2,7 @@
   <v-container>
     <div class="profile-card">
       <div class="profile-image">
-        <img src="rontale.jpg" alt="Rontale" />
+        <img src="assets/rontale.jpg" />
       </div>
       <div class="profile-info">
         <h2>Rontale, Dan Keneth M.</h2>
@@ -11,7 +11,7 @@
 
     <div class="profile-card">
       <div class="profile-image">
-        <img src="rhigen.jpg" alt="Rhigen Abaca" />
+        <img src="assets/rhigen.jpg" />
       </div>
       <div class="profile-info">
         <h2>Rhigen Abaca</h2>
@@ -20,7 +20,7 @@
 
     <div class="profile-card">
       <div class="profile-image">
-        <img src="nicolle.jpg" alt="Nicolle Gutierrez" />
+        <img src="assets/nicolle.jpg"/>
       </div>
       <div class="profile-info">
         <h2>Nicolle Gutierrez</h2>
