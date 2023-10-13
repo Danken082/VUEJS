@@ -1,17 +1,30 @@
 <template>
   <v-container>
-    Members:
-    <div class="member">
-      <div class="member-image member1"></div>
-      Rontale, Dan Keneth M.
+    <div class="profile-card">
+      <div class="profile-image">
+        <img src="rontale.jpg" alt="Rontale" />
+      </div>
+      <div class="profile-info">
+        <h2>Rontale, Dan Keneth M.</h2>
+      </div>
     </div>
-    <div class="member">
-      <div class="member-image member2"></div>
-      Rhigen Abaca
+
+    <div class="profile-card">
+      <div class="profile-image">
+        <img src="rhigen.jpg" alt="Rhigen Abaca" />
+      </div>
+      <div class="profile-info">
+        <h2>Rhigen Abaca</h2>
+      </div>
     </div>
-    <div class="member">
-      <div class="member-image member3"></div>
-      Nicolle Gutierrez
+
+    <div class="profile-card">
+      <div class="profile-image">
+        <img src="nicolle.jpg" alt="Nicolle Gutierrez" />
+      </div>
+      <div class="profile-info">
+        <h2>Nicolle Gutierrez</h2>
+      </div>
     </div>
   </v-container>
 </template>
@@ -25,31 +38,35 @@ export default defineComponent({
 </script>
 
 <style>
-.member {
+.profile-card {
   display: flex;
-  align-items: center;
-  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin: 10px;
+  padding: 10px;
 }
 
-.member-image {
-  width: 50px;
-  height: 50px;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  border-radius: 50%;
+.profile-image {
+  width: 100px;
+  height: 100px;
   margin-right: 10px;
+  overflow: hidden;
+  border-radius: 50%;
 }
 
-.member1 {
-  background-image: url('rontale.jpg');
+.profile-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
-.member2 {
-  background-image: url('rhigen.jpg');
+.profile-info {
+  flex: 1;
 }
 
-.member3 {
-  background-image: url('nicolle.jpg');
+h2 {
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
 }
 </style>
