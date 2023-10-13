@@ -1,13 +1,15 @@
 <template>
-<v-container>
-Rontale, Dan Keneth M.
-</v-container>
+<home/>
+
 </template>
 
 <script>
 import { defineComponent } from 'vue';  
-
+import home from '../components/Home.vue';
 export default defineComponent({
   name: 'homie',
+  components:
+  {home}
+  
 });
 </script>
